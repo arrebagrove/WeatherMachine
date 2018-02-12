@@ -103,7 +103,7 @@ namespace WeatherVoteTracker
 
                 results.Add(new VoteResult() {
                     PartitionKey = now.ToString("yyyyMMdd"),
-                    RowKey = now.ToString("yyyyMMdd-HHmmss-" + item.County + "-" + item.School),
+                    RowKey = now.ToString("yyyyMMdd-HHmmss-") + item.County + "-" + item.School,
                     EventTime = now,
                     County = item.County,
                     School = item.School,

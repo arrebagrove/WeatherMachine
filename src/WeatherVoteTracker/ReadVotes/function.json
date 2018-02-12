@@ -1,0 +1,15 @@
+{
+  "configurationSource": "attributes",
+  "bindings": [
+    {
+      "type": "timerTrigger",
+      "schedule": "0 59 * * * *",
+      "useMonitor": true,
+      "runOnStartup": false,
+      "name": "myTimer"
+    }
+  ],
+  "disabled": false,
+  "scriptFile": "..\\bin\\WeatherVoteTracker.dll",
+  "entryPoint": "WeatherVoteTracker.ReadVotes.Run"
+}
