@@ -74,7 +74,7 @@ namespace WeatherVoteTracker
                 new SchoolInfo()
                 {
                     County = "Erie",
-                    School = "Glenwood"
+                    School = "Glendale"
                 },
                 new SchoolInfo()
                 {
