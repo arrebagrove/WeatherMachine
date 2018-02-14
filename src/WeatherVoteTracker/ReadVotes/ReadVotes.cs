@@ -74,7 +74,7 @@ namespace WeatherVoteTracker
                 new SchoolInfo()
                 {
                     County = "Erie",
-                    School = "Glenwood"
+                    School = "Glendale"
                 },
                 new SchoolInfo()
                 {
@@ -87,7 +87,7 @@ namespace WeatherVoteTracker
 
         [FunctionName("ReadVotes")]
         public static async Task Run(
-            [TimerTrigger("0 59 * * * *")]TimerInfo myTimer,
+            [TimerTrigger("30 59 * * * *")]TimerInfo myTimer,
             [Table("WeatherMachineVoteResults", Connection = "WeatherMachineStorageConnection")] ICollector<ReadVotes.VoteResult> results,
             TraceWriter log)
         {
